@@ -1,0 +1,193 @@
+ body{
+
+        margin:0;
+
+        padding:40px;
+
+        background:linear-gradient(
+
+            to bottom,
+
+            #ffeef2,
+
+            #fff8fa
+        );
+
+        font-family:
+
+        "맑은 고딕",
+
+        sans-serif;
+    }
+
+    h1{
+
+        text-align:center;
+
+        color:#ff6b9d;
+
+        font-size:45px;
+
+        margin-bottom:40px;
+
+        text-shadow:0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    table{
+
+        width:90%;
+
+        max-width:1600px;
+
+        margin:auto;
+
+        border-collapse:collapse;
+
+        background:white;
+
+        border-radius:25px;
+
+        overflow:hidden;
+
+        box-shadow:
+
+        0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    th{
+
+        background:linear-gradient(
+
+            to right,
+
+            #ffb6c1,
+
+            #ffd1dc
+        );
+
+        color:#7a294f;
+
+        font-size:20px;
+
+        padding:20px;
+
+        letter-spacing:1px;
+    }
+
+    td{
+
+        padding:20px;
+
+        text-align:center;
+
+        border-bottom:1px solid #f3dbe3;
+
+        font-size:18px;
+
+        transition:0.3s;
+    }
+
+    /* 줄무늬 */
+
+    tr:nth-child(even){
+
+        background:#fff8fb;
+    }
+
+    /* 상위권 hover */
+
+    .top:hover{
+
+        background:#cfe8ff;
+
+        transform:scale(1.01);
+
+        transition:0.3s;
+
+        box-shadow:0 0 20px rgba(135,206,250,0.4);
+    }
+
+    /* 하위권 hover */
+
+    .bottom:hover{
+
+        background:#ffc7c7;
+
+        transform:scale(1.01);
+
+        transition:0.3s;
+
+        box-shadow:0 0 20px rgba(255,120,120,0.4);
+    }
+
+    /* 순위 */
+
+    .rank{
+
+        font-weight:bold;
+
+        font-size:22px;
+    }
+
+    /* 승 */
+
+    .win{
+
+        color:#2979ff;
+
+        font-weight:bold;
+    }
+
+    /* 패 */
+
+    .lose{
+
+        color:#ff5252;
+
+        font-weight:bold;
+    }
+
+    /* 승률 */
+
+    .odds{
+
+        color:#8e44ad;
+
+        font-weight:bold;
+    }
+
+    /* 1위 강조 */
+
+    .gold{
+
+        background:gold;
+
+        border-radius:10px;
+
+        padding:5px 12px;
+    }
+
+    /* 2위 */
+
+    .silver{
+
+        background:silver;
+
+        border-radius:10px;
+
+        padding:5px 12px;
+    }
+
+    /* 3위 */
+
+    .bronze{
+
+        background:#cd7f32;
+
+        color:white;
+
+        border-radius:10px;
+
+        padding:5px 12px;
+    }
+

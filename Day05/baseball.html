@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>KBO 프로야구 순위표</title>
+    <style>
+
+        body{
+            background:pink;
+            font-family:Arial;
+        }
+
+        h1{
+
+            text-align:center;
+
+            color:black;
+
+            margin-top:30px;
+        }
+
+        table{
+
+            width:1900px;
+
+            height:700px;
+
+            margin:30px auto;
+
+            border-collapse:collapse;
+
+            background:white;
+
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+
+        th{
+
+            background:plum;
+
+            color:brown;
+
+            padding:15px;
+
+            font-size:18px;
+            
+            border: 1px double black ;
+
+        }
+
+        td{
+
+            border:1px solid black;
+
+            padding:20px;
+
+            text-align:center;
+        }
+
+       
+
+        .top:hover{
+
+             background:gold;
+
+        }
+
+        .bottom:hover{
+
+             background:brown;
+        }
+
+        /* 순위,팀,경기수,승률,게임차*/
+ 
+        .rank,.team,.game,.odds,.gb{
+            color:black;
+            font-weight:bold;
+        }
+
+        /* 승 */
+
+        .win{
+            color:blue;
+            font-weight:bold;
+        }
+
+        /* 무 */
+        .draw{
+            color:black;
+            font-weight:bold;
+        }
+
+        /* 패 */
+
+        .lose{
+            color:red;
+            font-weight:bold;
+        }
+        
+       
+    </style>
+
+</head>
+
+<body>
+    <h1>KBO 프로야구 10개 구단 순위표</h1>
+
+    <table>
+
+        <tr>
+            
+            <th>순위</th>
+            <th>구단</th>
+            <th>경기</th>
+            <th>승</th>
+            <th>무</th>
+            <th>패</th>
+            <th>승률</th>
+            <th>게임차</th>
+
+        </tr>
+
+        <tr class="top">
+
+            <td class="rank">1</td>
+            <td class="team">삼성라이온즈</td>
+            <td class="game">49</td>
+            <td class="win">30</td>
+            <td class="draw">1</td>
+            <td class="lose">18</td>
+            <td class="odds">0.625</td>
+            <td class="gb">0.0</td>
+
+        </tr>
+
+        <tr class="top">
+
+            <td class="rank">2</td>
+            <td class="team">LG트윈스</td>
+            <td class="game">50</td>
+            <td class="win">30</td>
+            <td class="draw">0</td>
+            <td class="lose">20</td>
+            <td class="odds">0.600</td>
+            <td class="gb">1.0</td>
+
+        </tr>
+
+        <tr class="top">
+
+            <td class="rank">3</td>
+            <td class="team">KT위즈</td>
+            <td class="game">50</td>
+            <td class="win">29</td>
+            <td class="draw">1</td>
+            <td class="lose">20</td>
+            <td class="odds">0.592</td>
+            <td class="gb">1.5</td>
+
+        </tr>
+
+        <tr class="top">
+
+            <td class="rank">4</td>
+            <td class="team">KIA타이거즈</td>
+            <td class="game">51</td>
+            <td class="win">28</td>
+            <td class="draw">1</td>
+            <td class="lose">22</td>
+            <td class="odds">0.560</td>
+            <td class="gb">3.0</td>
+
+        </tr>
+
+        <tr class="bottom">
+
+            <td class="rank">5</td>
+            <td class="team">한화이글스</td>
+            <td class="game">49</td>
+            <td class="win">24</td>
+            <td class="draw">0</td>
+            <td class="lose">25</td>
+            <td class="odds">0.490</td>
+            <td class="gb">6.5</td>
+
+        </tr>
+
+        <tr class="bottom">
+
+            <td class="rank">6</td>
+            <td class="team">두산베어스</td>
+            <td class="game">51</td>
+            <td class="win">23</td>
+            <td class="draw">1</td>
+            <td class="lose">27</td>
+            <td class="odds">0.460</td>
+            <td class="gb">8.0</td>
+
+        </tr>
+
+        <tr class="bottom">
+
+            <td class="rank">7</td>
+            <td class="team">SSG랜더스</td>
+            <td class="game">50</td>
+            <td class="win">22</td>
+            <td class="draw">1</td>
+            <td class="lose">27</td>
+            <td class="odds">0.449</td>
+            <td class="gb">8.5</td>
+        </tr>
+
+        <tr class="bottom">
+
+            <td class="rank">8</td>
+            <td class="team">NC다이노스</td>
+            <td class="game">49</td>
+            <td class="win">20</td>
+            <td class="draw">1</td>
+            <td class="lose">28</td>
+            <td class="odds">0.417</td>
+            <td class="gb">10.0</td>
+        </tr>
+
+        <tr class="bottom">
+
+            <td class="rank">8</td>
+            <td class="team">롯데자이언츠</td>
+            <td class="game">49</td>
+            <td class="win">20</td>
+            <td class="draw">1</td>
+            <td class="lose">28</td>
+            <td class="odds">0.417</td>
+            <td class="gb">10.0</td>
+        </tr>
+
+        <tr class="bottom">
+
+            <td class="rank">10</td>
+            <td class="team">키움히어로즈</td>
+            <td class="game">52</td>
+            <td class="win">20</td>
+            <td class="draw">1</td>
+            <td class="lose">31</td>
+            <td class="odds">0.392</td>
+            <td class="gb">11.5</td>
+
+        </tr>
+
+    </table>
+
+</body>
+</html>
+
