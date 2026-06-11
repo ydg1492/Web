@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kakao map api</title>
+    <link rel="stylesheet" href="./kakao.css">
+
+    <!-- 모든 지도 API는 실제 서버에 업로드 되어야 만 실행됨. 즉, location이 http~로 시작 -->
+
+    <!-- 카카오지도 API(라이브러리,모듈) 사용하기  -->
+    <!-- 개발하기전에 반드시 [카카오 개발자 사이트 developers.kakao.com ]의 튜토리얼 문서를 확인 후 제작 -->
+    <!-- 개발가이드에 따라.. 앱 생성 및 api key 발급 받기. 웹서버 도메인 등록 -->
+
+    <!-- 실제 지도를 불러오는 작업을 수행하는 카카오의 지도 api 라이브러리 적용(외부 스크립트) : 발급받은 자바스크립트 키 를 등록 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8e1a1972ae7c0ce1b592d28a4593177f"></script>
+    
+    <!-- 지도를 띄우는 코드 작성(외부 스크립트) defer:지연 -->
+    <script src="./kakaomap.js" defer></script>
+
+</head>
+<body>
+
+    <!-- 지도가 그려질 영역 요소 생성[사이즈 지정이 필수!!!]  -->
+    <div id="map" style="width: 500px; height: 400px;"></div>
+    
+</body>
+</html>

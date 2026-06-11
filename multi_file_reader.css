@@ -1,0 +1,229 @@
+/* 전체 페이지 */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    padding:40px 20px;
+
+    font-family:'맑은 고딕', sans-serif;
+
+    background:linear-gradient(
+    135deg,
+    #ff758c,
+    #ff7eb3,
+    #ffb5d8
+    );
+}
+/* 메인 컨테이너 */
+.container{
+    max-width:1400px;
+    margin:0 auto;
+    background:linear-gradient(
+    135deg,
+    #ff4f9a,
+    #ffb6c1
+     );
+    padding:40px;
+    border-radius:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* 제목 */
+h2{
+    text-align:center;
+    font-size:36px;
+    color:#d63384;
+    margin-bottom:10px;
+}
+
+/* 설명글 */
+.sub-text{
+     text-align:center;
+     background:linear-gradient(
+        135deg,
+        #ff4f9a,
+        #c084fc
+    );
+    margin-bottom:30px;
+    font-size:17px;
+}
+
+/*파일선택영역*/
+input[type="file"]{
+    width:100%;
+    padding:18px;
+
+    border:3px dashed #c8b6ff;
+    border-radius:15px;
+
+    background:#f8f4ff;
+
+    font-size:16px;
+    color:#666;
+
+    cursor:pointer;
+
+    transition:all 0.3s ease;
+}
+
+input[type="file"]:hover{
+    background:#f1e8ff;
+    border-color:#b388ff;
+
+    box-shadow:0 5px 15px rgba(179,136,255,0.25);
+}
+
+input[type="file"]::file-selector-button{
+    padding:12px 20px;
+
+    border:none;
+    border-radius:10px;
+
+    background:linear-gradient(
+        135deg,
+        #d8b4fe,
+        #f9a8d4
+    );
+
+    color:white;
+
+    font-size:15px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    margin-right:15px;
+
+    transition:all 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover{
+    background:linear-gradient(
+        135deg,
+        #c084fc,
+        #ec4899
+    );
+
+    transform:translateY(-2px);
+
+    box-shadow:0 5px 15px rgba(192,132,252,0.35);
+}
+
+/* 구분선 */
+hr{
+    margin:35px 0;
+
+    border:none;
+    height:2px;
+
+    background:linear-gradient(
+        to right,
+        transparent,
+        #ff7eb3,
+        transparent
+    );
+}
+
+/* 이미지 출력 영역 */
+#image{
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+
+    gap:25px;
+
+    max-width:1200px;
+    margin:0 auto;
+}
+
+/* 카드 */
+.item{
+    text-align:center;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    background:#ffeef5;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.12);
+
+    transition:all 0.3s ease;
+}
+
+/* 카드 호버 */
+.item:hover{
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,0.18);
+}
+
+/* 이미지 */
+.item img{
+    width:180px;
+    height:180px;
+
+    object-fit:contain;
+
+    margin-bottom:15px;
+
+    transition:0.3s;
+}
+
+.item:hover img{
+    transform:scale(1.08);
+}
+
+/* 파일명 */
+.item p{
+    font-size:15px;
+    font-weight:bold;
+
+    color:#444;
+
+    word-break:break-all;
+}
+
+/* 태블릿 */
+@media(max-width:992px){
+    #image{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+/* 모바일 */
+@media(max-width:768px){
+    .container{
+        padding:25px;
+    }
+
+    h2{
+        font-size:28px;
+    }
+
+    #image{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .item img{
+        width:140px;
+        height:140px;
+    }
+}
+
+/* 작은 모바일 */
+@media(max-width:480px){
+    #image{
+        grid-template-columns:1fr;
+    }
+
+    .item img{
+        width:180px;
+        height:180px;
+    }
+}
