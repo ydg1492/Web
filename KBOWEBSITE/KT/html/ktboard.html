@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/ktstyle.css">
+    <script src="../js/ktboard.js" defer></script>
+    <script src="../js/ktdetail.js" defer></script>
+</head>
+<body>
+   <header>
+   
+    <div class="team-info">
+        <img src="../../images/KT.png" alt="KT">
+
+        <div class="team-text">
+            <h1>KT위즈</h1>
+            <p>마법의 시작 위대한 도약(THE BIGINNING)</p>
+        </div>
+
+       <div class="menu-box">
+        <nav class="menu">
+        <a href="ktjoin.html">회원가입</a>
+        <a id="loginLink"href="ktlogin.html">로그인</a>
+        <a href="../../index.html">홈으로</a>
+        </nav>
+        
+        <div id="loginUser"></div>
+       </div> 
+    </div>
+</header>
+    <div class="team-card">
+    <h3>구단 선수 소개</h3>
+    <p>KT위즈 선수단 정보를 확인해 보세요.</p>
+    <a href="https://www.ktwiz.co.kr/player/pitcher" target="_blank">
+        선수단 소개 →
+    </a>
+    </div>
+
+     <main>
+        
+        <!-- 글쓰기 -->
+        <section class="write-area">
+            <button type="button" onclick="location.href='ktregist.html'">등록</button>
+        </section>
+        
+        <!-- 검색 -->
+        <section class="search-section">
+            <div class="search-area">
+                <select id="searchType">
+                <option value="all">전체</option>
+                <option value="title">제목</option>
+                <option value="message">내용</option>
+                <option value="name">작성자</option>
+                </select>
+                <input type="text" id="keyword" placeholder="검색어 입력">
+                <button type="button" id="searchBtn">검색</button>
+            </div>
+        </section>
+
+
+        <section id="boardList" class="board-area"></section>
+
+
+        <!-- 페이징 -->
+        <nav id="pagingArea" class="pagination"></nav>
+
+      
+
+    </main>
+
+    <div id="modal" class="modal">
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">×</span>
+
+        <div id="modalBody"></div>
+
+        <div class="modal-action">
+            <button id="modifybtn" onclick="modifyPost()">수정</button>
+            <button id="deletebtn" onclick="deletePost()">삭제</button>
+        </div>
+
+    </div>
+    </div>
+    
+</body>
+</html>

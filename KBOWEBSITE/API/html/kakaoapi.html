@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KBO 구장 주변 정보</title>
+
+    <link rel="stylesheet" href="../css/kakaoapi.css">
+
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6a181dee5ddf40aac072af702a327707&libraries=services"></script>
+
+    <script src="../js/kakaoapi.js" defer></script>
+
+</head>
+<body>
+
+<header>
+    <h1>KBO 구장 주변 정보</h1>
+    <p>10개구단 구장별 주변 맛집 카페 주차장 검색</p>
+</header>
+
+<div class="container">
+
+    <div class="left-panel">
+
+        <div class="toolbar">
+
+            <div class="stadium-select">
+                <div id="selected" class="selected">구단 선택</div>
+                <div id="options" class="options"></div>
+            </div>
+
+            <button onclick="searchPlace('맛집')">맛집</button>
+            <button onclick="searchPlace('카페')">카페</button>
+            <button onclick="searchPlace('주차장')">주차장</button>
+
+        </div>
+
+        <div id="placeInfo" class="place-info">
+            <h2>선택 장소</h2>
+            <div id="selectedPlace" class="empty">장소를 선택해주세요</div>
+        </div>
+
+        <div id="list"></div>
+
+    </div>
+
+    <div class="right-panel">
+
+        <div id="map"></div>
+
+        <div id="routeInfo" class="route-info">
+            <div>거리 : -</div>
+            <div>예상시간 : -</div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

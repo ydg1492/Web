@@ -1,0 +1,70 @@
+/* 로그인 */
+.login-container{
+    min-height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.login-card{
+    width:100%;
+    max-width:450px;
+    background:#fff;
+    border-radius:16px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.login-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.login-card h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#c8102e;
+    font-size:32px;
+}
+
+/* 버튼 공통 */
+.button-group{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
+
+.button-group button{
+    flex:1;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* 로그인 버튼 */
+.button-group button[type="submit"]{
+    background:#c8102e;
+    color:#fff;
+}
+
+/* 취소 */
+.button-group button[type="button"]{
+    background:#666;
+    color:#fff;
+}
+
+.login-user{
+    display:block;
+    width:100%;
+    margin-top:10px;
+
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    text-align:center;
+    white-space:nowrap;
+}

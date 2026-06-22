@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/hwstyle.css">
+    <script src="../js/hwboard.js" defer></script>
+    <script src="../js/hwdetail.js" defer></script>
+</head>
+<body>
+   <header>
+   
+    <div class="team-info">
+        <img src="../../images/HW.png" alt="HW">
+
+        <div class="team-text">
+            <h1>한화이글스</h1>
+            <p>IT'S OUR TURN(이제 우리의 차례)</p>
+        </div>
+
+        <div class="team-rank">
+        <span>현재 순위</span>
+        <h2>6위</h2>
+        </div>
+
+        <nav class="menu">
+        <a href="hwjoin.html">회원가입</a>
+        <a id="loginLink"href="hwlogin.html">로그인</a>
+        <a href="../../index.html">홈으로</a>
+        </nav>
+        
+        <div id="loginUser"></div>
+    </div>
+</header>
+    <div class="team-card">
+    <h3>구단 선수 소개</h3>
+    <p>한화이글스 선수단 정보를 확인해 보세요.</p>
+    <a href="https://www.hanwhaeagles.co.kr/PL/PC/PLPC01.do" target="_blank">
+        선수단 소개 →
+    </a>
+    </div>
+
+     <main>
+
+        <!-- 검색 -->
+        <section class="search-section">
+            <div class="search-area">
+                <select id="searchType">
+                <option value="all">전체</option>
+                <option value="title">제목</option>
+                <option value="message">내용</option>
+                <option value="name">작성자</option>
+                </select>
+                <input type="text" id="keyword" placeholder="검색어 입력">
+                <button type="button" id="searchBtn">검색</button>
+            </div>
+        </section>
+
+
+        <section id="boardList" class="board-area"></section>
+
+
+        <!-- 페이징 -->
+        <nav id="pagingArea" class="pagination"></nav>
+
+        <!-- 글쓰기 -->
+        <section class="write-area">
+            <button type="button" onclick="location.href='hwregist.html'">등록</button>
+        </section>
+
+    </main>
+
+    <div id="modal" class="modal">
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">×</span>
+
+        <div id="modalBody"></div>
+
+        <div class="modal-action">
+            <button id="modifybtn" onclick="modifyPost()">수정</button>
+            <button id="deletebtn" onclick="deletePost()">삭제</button>
+        </div>
+
+    </div>
+    </div>
+    
+</body>
+</html>

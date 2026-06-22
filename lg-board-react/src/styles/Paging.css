@@ -1,0 +1,67 @@
+/* =========================
+   PAGINATION WRAPPER
+========================= */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   BUTTON 기본 스타일
+========================= */
+.pagination button {
+  min-width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #fff;
+  color: #555;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+  transition: all 0.2s ease;
+}
+
+/* hover */
+.pagination button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   ACTIVE PAGE
+========================= */
+.pagination button.active {
+  background: #007bff;
+  color: #fff;
+
+  box-shadow: 0 6px 15px rgba(0,123,255,0.25);
+}
+
+/* =========================
+   이전 / 다음 버튼 강조 (선택)
+========================= */
+.pagination button:first-child,
+.pagination button:last-child {
+  background: #f3f4f6;
+  color: #333;
+}
+
+/* hover 강화 */
+.pagination button:first-child:hover,
+.pagination button:last-child:hover {
+  background: #e5e7eb;
+}

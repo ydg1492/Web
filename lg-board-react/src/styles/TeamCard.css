@@ -1,0 +1,64 @@
+/* =========================
+   TEAM CARD
+========================= */
+.team-card {
+  width: 320px;
+  margin: 30px auto;
+  padding: 25px;
+
+  background: #ffffff;
+  border-radius: 18px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  transition: all 0.25s ease;
+}
+
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.18);
+}
+
+
+.team-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #c30452;
+  margin-bottom: 5px;
+}
+
+
+.team-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.team-card a {
+  display: inline-block;
+
+  margin-top: 10px;
+  padding: 10px 18px;
+
+  background: #c30452;
+  color: white;
+
+  text-decoration: none;
+  border-radius: 30px;
+
+  font-weight: 600;
+
+  transition: 0.25s;
+}
+
+.team-card a:hover {
+  background: #ff2b7a;
+  transform: translateY(-2px);
+}

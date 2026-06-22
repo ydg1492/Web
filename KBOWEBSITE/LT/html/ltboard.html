@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/ltstyle.css">
+    <script src="../js/ltboard.js" defer></script>
+    <script src="../js/ltdetail.js" defer></script>
+</head>
+<body>
+   <header>
+   
+    <div class="team-info">
+        <img src="../../images/LT.png" alt="SL">
+
+        <div class="team-text">
+            <h1>롯데자이언츠</h1>
+            <p>GO HIGH</p>
+        </div>
+
+        <div class="team-rank">
+        <span>현재 순위</span>
+        <h2>9위</h2>
+        </div>
+
+        <nav class="menu">
+        <a href="ltjoin.html">회원가입</a>
+        <a id="loginLink"href="ltlogin.html">로그인</a>
+        <a href="../../index.html">홈으로</a>
+        </nav>
+        
+        <div id="loginUser"></div>
+    </div>
+</header>
+    <div class="team-card">
+    <h3>구단 선수 소개</h3>
+    <p>롯데자이언츠 선수단 정보를 확인해 보세요.</p>
+    <a href="https://www.giantsclub.com/html/?pcode=819" target="_blank">
+        선수단 소개 →
+    </a>
+    </div>
+
+     <main>
+
+        <!-- 검색 -->
+        <section class="search-section">
+            <div class="search-area">
+                <select id="searchType">
+                <option value="all">전체</option>
+                <option value="title">제목</option>
+                <option value="message">내용</option>
+                <option value="name">작성자</option>
+                </select>
+                <input type="text" id="keyword" placeholder="검색어 입력">
+                <button type="button" id="searchBtn">검색</button>
+            </div>
+        </section>
+
+
+        <section id="boardList" class="board-area"></section>
+
+
+        <!-- 페이징 -->
+        <nav id="pagingArea" class="pagination"></nav>
+
+        <!-- 글쓰기 -->
+        <section class="write-area">
+            <button type="button" onclick="location.href='ltregist.html'">등록</button>
+        </section>
+
+    </main>
+
+    <div id="modal" class="modal">
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">×</span>
+
+        <div id="modalBody"></div>
+
+        <div class="modal-action">
+            <button id="modifybtn" onclick="modifyPost()">수정</button>
+            <button id="deletebtn" onclick="deletePost()">삭제</button>
+        </div>
+
+    </div>
+    </div>
+    
+</body>
+</html>

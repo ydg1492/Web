@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <script src="./rank_chart.js" defer></script>
+</head>
+<body>
+    <!--헤더 영역-->
+    <header>
+    <div class="logo">
+    KBO <span>FAN SITE</span>
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="./kbo.html" target="_blank">6월경기일정및결과</a></li>
+            <li><a href="./API/html/kakaoapi.html" target="_blank">KAKAO지도API</a></li>
+            <li><a href="https://www.koreabaseball.com/Default.aspx?vote=true" target="_blank">KBO싸이트</a></li>
+            <li><a href="https://www.statiz.co.kr/" target="_blank">스탯티즈</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <!--메인배너 영역-->
+    <section class="hero">
+
+    <h1>2026 KBO 리그</h1>
+
+    <p>
+        프로야구 10개 구단 정보와
+        팬 커뮤니티공간
+    </p>
+
+    </section>
+    
+    <!--순위표 영역 -->
+    <section class="ranking">
+
+    <h2>KBO 리그 순위</h2>
+
+    <div class="update">
+        <h3>마지막 업데이트 :</h3>
+        <span id="updateTime">-</span>
+    </div>
+
+    <!--차트 영역-->
+    <div class="chart-box">
+        <canvas id="kboChart"></canvas>
+    </div>
+
+    <!--순위 카드 영역-->
+    <div class="rank-box">
+        <div id="container" class="rank-list"></div>
+    </div>
+
+   </section>
+
+   <!--팀카드 영역 -->
+   <section class="teams">
+
+   <h2>프로야구 10개 구단 자유게시판</h2>
+
+   <div class="team-grid">
+
+        <a href="./LG/html/lgboard.html" class="team-card lg">
+               <div class="logo-image"><img src="./images/LG.png"></div>
+               <h3>LG 트윈스</h3>
+               <p>잠실야구장</p>
+        </a>
+
+        <a href="./DS/html/dsboard.html" class="team-card ds">
+            <div class="logo-image"><img src="./images/DS.png"></div>
+            <h3>두산베어스</h3>
+            <p>잠실야구장</p>
+        </a>
+
+        <a href="./KW/html/kwboard.html" class="team-card kw">
+            <div class="logo-image"><img src="./images/KW.png"></div>
+            <h3>키움히어로즈</h3>
+            <p>고척스카이돔</p>
+        </a>
+
+        <a href="./KT/html/ktboard.html" class="team-card kt">
+            <div class="logo-image"><img src="./images/KT.png"></div>
+            <h3>KT위즈</h3>
+            <p>수원KT위즈파크</p>
+        </a>
+
+
+        <a href="./SSG/html/ssgboard.html" class="team-card ssg">
+            <div class="logo-image"><img src="./images/SSG.png"></div>
+            <h3>SSG랜더스</h3>
+            <p>인천SSG랜더스필드</p>
+        </a>
+
+        <a href="./HW/html/hwboard.html" class="team-card hw">
+            <div class="logo-image"><img src="./images/HW.png"></div>
+            <h3>한화이글스</h3>
+            <p>대전볼파크</p>
+        </a>
+
+        <a href="./KIA/html/kiaboard.html" class="team-card kia">
+            <div class="logo-image"><img src="./images/KIA.png"></div>
+            <h3>기아타이거즈</h3>
+            <p>광주챔피언스필드</p>
+        </a>
+
+        <a href="./SL/html/slboard.html" class="team-card sl">
+            <div class="logo-image"><img src="./images/SL.png"></div>
+            <h3>삼성라이온즈</h3>
+            <p>라이온즈파크</p>
+        </a>
+
+        <a href="./nc/html/ncboard.html" class="team-card nc">
+            <div class="logo-image"><img src="./images/NC.png"></div>
+            <h3>NC다이노스</h3>
+            <p>창원NC파크</p>
+        </a>
+        
+          <a href="./LT/html/ltboard.html" class="team-card lt">
+            <div class="logo-image"><img src="./images/LT.png"></div>
+            <h3>롯데자이언츠</h3>
+            <p>사직야구장</p>
+        </a>
+
+    </div>
+
+</section>
+
+<!--영상 영역 -->
+<div class="video-container">
+
+    <div class="video-card lg">
+        <iframe src="https://www.youtube.com/embed/UNSUjQJ61AU" allow="fullscreen"></iframe>
+        <h3>LG트윈스</h3>
+    </div>
+
+    <div class="video-card ds">
+        <iframe src="https://www.youtube.com/embed/tqGulLjkzKk" allow="fullscreen"></iframe>
+        <h3>두산베어스</h3>
+    </div>
+    
+    <div class="video-card kw">
+        <iframe src="https://www.youtube.com/embed/fpJw6LHw2Zw" allow="fullscreen"></iframe>
+        <h3>키움히어로즈</h3>
+    </div>
+
+    <div class="video-card kt">
+        <iframe src="https://www.youtube.com/embed/oZ4nIrlPuS8" allow="fullscreen"></iframe>
+        <h3>KT위즈</h3>
+    </div>
+
+    <div class="video-card ssg">
+        <iframe src="https://www.youtube.com/embed/zX7uot4biaQ" allow="fullscreen"></iframe>
+        <h3>SSG랜더스</h3>
+    </div>
+
+    <div class="video-card hw">
+        <iframe src="https://www.youtube.com/embed/YLjaYbF2p4M" allow="fullscreen"></iframe>
+        <h3>한화이글스</h3>
+    </div>
+
+    <div class="video-card kia">
+        <iframe src="https://www.youtube.com/embed/iTPWsq1msBU" allow="fullscreen"></iframe>
+        <h3>기아타이거즈</h3>
+    </div>
+
+    <div class="video-card sl">
+        <iframe src="https://www.youtube.com/embed/kzh0Ea2wDKs" allow="fullscreen"></iframe>
+        <h3>삼성라이온즈</h3>
+    </div>
+
+      <div class="video-card nc">
+        <iframe src="https://www.youtube.com/embed/p3Xl1tSC1Qc" allow="fullscreen"></iframe>
+        <h3>NC다이노스</h3>
+    </div>
+
+    <div class="video-card lt">
+        <iframe src="https://www.youtube.com/embed/mVljgah999k" allow="fullscreen"></iframe>
+        <h3>롯데자이언츠</h3>
+    </div>
+    
+
+</div>
+
+</body>
+</html>

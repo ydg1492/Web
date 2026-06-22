@@ -1,0 +1,68 @@
+.home-container{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111827,
+            #7f1d1d
+        );
+}
+
+.home-card{
+    width:500px;
+    text-align:center;
+    background:white;
+    padding:50px;
+    border-radius:20px;
+
+    border-top:8px solid #c8102e;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.home-logo{
+    width:180px;
+    margin-bottom:20px;
+}
+
+.home-card h1{
+    color:#111827;
+    margin-bottom:10px;
+    font-size:2.2rem;
+}
+
+.home-card p{
+    color:#dc2626;
+    font-size:1.4rem;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+
+.enter-btn{
+    display:inline-block;
+
+    padding:14px 32px;
+
+    background:#c8102e;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.enter-btn:hover{
+    background:#9f1239;
+
+    transform:translateY(-3px);
+}

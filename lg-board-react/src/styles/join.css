@@ -1,0 +1,66 @@
+/* 회원가입 */
+
+.join-container{
+    min-height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.join-card{
+    width:100%;
+    max-width:450px;
+    background:#fff;
+    border-radius:16px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.join-card h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#c8102e;
+    font-size:32px;
+}
+
+.join-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.join-form input{
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+/* 버튼 영역 */
+.button-group{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
+
+.button-group button{
+    flex:1;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* 가입하기 */
+.button-group button[type="submit"]{
+    background:#c8102e;
+    color:#fff;
+}
+
+/* 취소 */
+.button-group button[type="button"]{
+    background:#666;
+    color:#fff;
+}

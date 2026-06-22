@@ -1,0 +1,131 @@
+/*기본*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*body*/
+body {
+    background: linear-gradient(
+        135deg,
+        #0b3b2e 0%,
+        #14532d 50%,
+        #1f6f43 100%
+    );
+    color: white;
+    font-family: sans-serif;
+}
+
+/*타이틀*/
+h1{
+    color:#a3e635;
+    text-shadow:0 0 10px rgba(163,230,53,0.4);
+}
+
+#kbo {
+    padding: 20px;
+}
+
+/*하루 카드(잔디 느낌)*/
+.day-card {
+    margin-bottom: 25px;
+    padding: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #14532d 0%,
+        #166534 45%,
+        #84cc16 100%
+    );
+
+    border-radius: 14px;
+}
+
+/*날짜*/
+.date-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight:700;
+    color:#f0fdf4;
+}
+
+/*경기 그리드*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+/*경기 카드(전광판 느낌)*/
+.game {
+    background: linear-gradient(
+        180deg,
+        rgba(17,24,39,0.85) 0%,
+        rgba(31,41,55,0.75) 100%
+    );
+
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.08);
+
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* 구장 */
+.stadium{
+    color:#bbf7d0;
+    font-size:18px;
+    font-weight:800;
+}
+
+/* 팀 영역 */
+.teams{
+    margin:10px 0;
+    font-size:22px;
+    font-weight:800;
+    color:#f8fafc;
+    line-height:1.4;
+}
+
+/* 홈팀 */
+.home-team{
+    color:#60a5fa;
+    text-shadow:0 0 6px rgba(96,165,250,0.4);
+}
+
+/* VS */
+.vs{
+    color:#facc15;
+    font-weight:900;
+    text-shadow:0 0 8px rgba(250,204,21,0.5);
+}
+
+/* 원정팀 */
+.away-team{
+    color:#fb7185;
+    text-shadow:0 0 6px rgba(251,113,133,0.3);
+}
+
+/* 점수 */
+.score{
+    font-size:30px;
+    font-weight:900;
+    color:#fde047;
+    text-shadow:0 0 14px rgba(253,224,71,0.7);
+}
+
+/*구장색상*/
+.jamsil   { color:#a3a3a3; } /*LG,두산*/
+.gocheok  { color:#c084fc; } /*키움*/
+.suwon    { color:#cbd5e1; } /*KT*/
+.incheon  { color:#fda4af; } /*SSG*/
+.daejeon  { color:#f97316; } /*한화*/
+.gwangju  { color:#f43f5e; } /*기아*/
+.daegu    { color:#60a5fa; } /*삼성*/
+.changwon { color:#93c5fd; } /*NC*/
+.daejeon  { color:#f97316; } /*부산*/
+
+
+

@@ -1,0 +1,175 @@
+/*KBO 순위 섹션*/
+
+.ranking {
+    padding: 50px 20px;
+    background: linear-gradient(180deg, #0f172a, #1e293b);
+    border-radius: 20px;
+    margin: 40px auto;
+}
+
+.ranking h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.update {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/*카드 배치*/
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+/*카드*/
+
+.rank-card {
+    background: linear-gradient(
+        180deg,
+        #23272f 0%,
+        #171a21 100%
+    );
+
+    color: white;
+    padding: 22px;
+    border-radius: 16px;
+
+    text-align: center;
+
+    border-top: 6px solid #444;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.3);
+
+    transition: all .25s ease;
+}
+
+.rank-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,.45);
+}
+
+/*순위*/
+
+.rank {
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+/*팀명*/
+
+.rank-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+/*기록*/
+
+.rank-card p {
+    margin: 8px 0;
+    color: #d1d5db;
+    font-size: .95rem;
+}
+
+/*1위*/
+
+.rank-card.gold {
+    border-top-color: #FFD700;
+}
+
+.rank.gold {
+    color: #FFD700;
+    text-shadow:
+        0 0 10px rgba(255,215,0,.7);
+}
+
+/*2위*/
+
+.rank-card.silver {
+    border-top-color: #C0C0C0;
+}
+
+.rank.silver {
+    color: #C0C0C0;
+}
+
+/*3위*/
+
+.rank-card.bronze {
+    border-top-color: #CD7F32;
+}
+
+.rank.bronze {
+    color: #CD7F32;
+}
+
+/*4~5위*/
+
+.rank-card.blue {
+    border-top-color: #3b82f6;
+}
+
+.rank.blue {
+    color: #60a5fa;
+}
+
+/*6~7위*/
+
+.rank-card.green {
+    border-top-color: #22c55e;
+}
+
+.rank.green {
+    color: #4ade80;
+}
+
+/*8~10위*/
+
+.rank-card.red {
+    border-top-color: #ef4444;
+}
+
+.rank.red {
+    color: #f87171;
+}
+
+/*반응형*/
+
+@media (max-width: 1200px) {
+    #container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rank-card h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #container {
+        grid-template-columns: 1fr;
+    }
+
+    .rank {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,108 @@
+
+/* =========================
+   SEARCH SECTION WRAPPER
+========================= */
+.search-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  margin: 20px 0;
+}
+
+/* =========================
+   SEARCH AREA BOX
+========================= */
+.search-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: 100%;
+  max-width: 1200px;
+
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 18px;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   SELECT BOX
+========================= */
+.search-area select {
+  width: 110px;
+  height: 48px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  padding: 0 10px;
+  background: #fafafa;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+/* =========================
+   INPUT
+========================= */
+.search-area input {
+  flex: 1;
+  height: 48px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  padding: 0 16px;
+  font-size: 15px;
+
+  outline: none;
+  transition: 0.2s;
+}
+
+.search-area input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+}
+
+/* =========================
+   BUTTON
+========================= */
+.search-area button {
+  width: 90px;
+  height: 48px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg,#6366f1,#4f46e5);
+  color: white;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.search-area button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(79,70,229,0.3);
+}
+
+/* =========================
+   RESPONSIVE (옵션)
+========================= */
+@media (max-width: 768px) {
+  .search-area {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-area select,
+  .search-area button {
+    width: 100%;
+  }
+}

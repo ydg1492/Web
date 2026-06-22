@@ -1,0 +1,109 @@
+.write-card {
+  width: 100%;
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 40px;
+
+  background: #fff;
+  border-radius: 18px;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.write-card h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #c8102e;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group label span {
+  font-size: 12px;
+  color: #888;
+}
+
+/* input, textarea */
+.form-group input,
+.form-group textarea {
+  padding: 14px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  outline: none;
+  transition: all 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #c8102e;
+  box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.1);
+}
+
+.form-group textarea {
+  min-height: 200px;
+  resize: vertical;
+}
+
+/* 버튼 그룹 */
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 14px;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+/* 등록 */
+.button-group button[type="submit"] {
+  background: #c8102e;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* 초기화 */
+.button-group button[type="button"] {
+  background: #666;
+  color: #fff;
+}
+
+/* hover */
+.button-group button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+/* disabled */
+.button-group button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}

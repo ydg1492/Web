@@ -1,0 +1,516 @@
+/*기본*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+/*body*/
+body{
+    font-family: 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+
+    background:linear-gradient(
+        180deg,
+        #e8f5e9 0%,
+        #ffffff 100%
+    );
+
+    color:#e5e7eb;
+
+    min-height:100vh;
+}
+
+/*header*/
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 40px;
+
+    background:#1f6f43;
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    width:100%;
+}
+
+/*logo*/
+.logo{
+    font-weight:800;
+    font-size:22px;
+    letter-spacing:1px;
+    color:#C7F9CC;
+}
+
+.logo span{
+    color:#D9FFE8;
+
+    text-shadow:
+        0 1px 0 #ffffff,
+        0 2px 0 #6ee7b7,
+        0 4px 8px rgba(0,0,0,.25);
+}
+
+/*nav*/
+nav ul{
+    display:flex;
+    gap: 30px;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav a{
+    display:flex;
+    align-items:center;
+
+    font-family:"Pretendard",sans-serif;
+    font-size:16px;
+    font-weight:600;
+
+    color:#cbd5e1;
+    text-decoration:none;
+
+    transition:.25s;
+}
+
+nav a:hover{
+    color:#facc15;
+}
+
+/*hero*/
+.hero{
+    position: relative;
+    width: 100%;
+    min-height: 240px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    background:
+        linear-gradient(
+            rgba(232,245,233,.9),
+            rgba(220,237,200,.9)
+        ),
+        url("./images/kbo.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    text-align:center;
+    padding:30px 20px;
+}
+
+.hero h1{
+    font-size: clamp(28px, 4vw, 52px);
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 1.15;
+    color: #1f6f43;
+    margin: 0;
+}
+
+.hero p{
+    color: #1f6f43;
+    margin-top: 14px;
+    font-size: clamp(15px, 1.4vw, 20px);
+    line-height: 1.6;
+    opacity: .9;
+}
+
+/*SECTION*/
+section{
+    width:min(1400px,95%);
+    margin: 40px auto;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+
+    font-size:24px;
+    font-weight:800;
+
+}
+
+.team-grid{
+    display:grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap:18px;
+}
+
+/*팀카드*/
+.team-card {
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    text-decoration:none;
+    color:white;
+
+    background:#1f6f43;
+
+    border-radius:18px;
+    padding:20px;
+
+    transition:.25s;
+
+    min-height:180px;
+}
+
+.teams h2{
+    color:green;
+}
+
+/*hover*/
+.team-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 40px rgba(0,0,0,.4);
+    border-color: green;
+}
+
+/*LG*/
+.lg{ 
+    border: 5px solid #A50034;
+    box-shadow:
+    0 -2px 12px rgba(165,0,52,.45),
+    0 0 18px rgba(165,0,52,.15);
+}
+/*두산*/
+.ds{
+    border: 5px solid #131230;
+    box-shadow:
+        0 -2px 12px rgba(19,18,48,.45),
+        0 0 18px rgba(19,18,48,.25);
+}
+
+/*키움*/
+.kw{
+    border: 5px solid #4a0e1f;
+    box-shadow:
+        0 -2px 12px rgba(74,14,31,.45),
+        0 0 18px rgba(74,14,31,.25);
+}
+
+/*KT*/
+.kt{
+    border: 5px solid #1a1a1a;
+    box-shadow:
+        0 -2px 12px rgba(0,0,0,.55),
+        0 0 18px rgba(0,0,0,.35);
+}
+
+/*SSG*/
+.ssg{
+    border:5px solid #D4A017;
+    box-shadow:
+        0 -2px 12px rgba(212,160,23,.45),
+        0 0 18px rgba(212,160,23,.15);
+}
+
+/*한화*/
+.hw{
+    border:5px solid #F97316;
+    box-shadow:
+        0 -2px 12px rgba(249,115,22,.45),
+        0 0 18px rgba(249,115,22,.15);
+}
+
+/*KIA*/
+.kia{
+    border:5px solid #7F1D1D;
+    box-shadow:
+        0 -2px 12px rgba(127,29,29,.5),
+        0 0 20px rgba(127,29,29,.2);
+}
+
+/*삼성*/
+.sl{
+    border:5px solid #60A5FA;
+    box-shadow:
+        0 -2px 12px rgba(96,165,250,.45),
+        0 0 18px rgba(96,165,250,.15);
+}
+
+/*NC*/
+.nc{
+    border:5px solid #1E3A8A;
+    box-shadow:
+        0 -2px 12px rgba(30,58,138,.5),
+        0 0 20px rgba(30,58,138,.2);
+}
+
+/*롯데*/
+.lt{
+    border: 5px solid #041e42;
+    box-shadow:
+        0 -2px 12px rgba(4,30,66,.55),
+        0 0 18px rgba(255,182,193,.25);
+}
+
+/*logo-image*/
+.logo-image{
+    width:110px;
+    height:110px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#fff;
+    border-radius:12px;
+
+    overflow:hidden;
+    margin:0 auto 14px;
+}
+
+.logo-image img{
+    width:85px;
+    height:85px;
+    object-fit:contain;
+}
+
+/*차트*/
+.chart-box{
+    background: linear-gradient(180deg, #227a4a, #1b5e3a);
+    border: 1px solid rgba(255,255,255,.18);
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+    padding:25px;
+    border-radius:20px;
+
+    margin-bottom:50px;
+
+    height:420px;
+}
+
+#kboChart{
+    width:100% !important;
+    height:100% !important;
+}
+
+.ranking h2{
+     
+    color:green;
+}
+/*순위카드*/
+.rank-list{
+    display:grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap:18px;
+}
+
+.rank-card{
+    background:#0f3d2e;
+
+    border-radius:18px;
+    padding:20px;
+
+    text-align:center;
+
+    transition:.25s;
+
+    min-height:140px;
+}
+
+/*rank hover*/
+.rank-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 40px rgba(0,0,0,.45);
+}
+
+/*1~3위*/
+.rank-1{ border:5px solid rgba(255,215,0,.6); }
+.rank-2{ border:5px solid rgba(192,192,192,.6); }
+.rank-3{ border:5px solid rgba(205,127,50,.6); }
+
+/*4~10위*/
+.rank-4,
+.rank-5{ border:5px solid #22c55e; }
+
+.rank-6,
+.rank-7{ border:5px solid #3b82f6; }
+
+.rank-8,
+.rank-9,
+.rank-10{ border:5px solid #ef4444; }
+
+/*update*/
+#updateTime{
+   color:#1f6f43;
+}
+
+.update h3{
+   display:inline;
+   color:#1f6f43;
+}
+
+/*영상*/
+.video-container{
+    display:grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap:25px;
+
+    max-width:1400px;
+    margin:50px auto 0;
+}
+
+.video-card{
+    background:#1f6f43;
+    box-sizing:border-box;
+    border-radius:18px;
+    overflow:hidden;
+
+    transition:.25s;
+
+    min-height:180px;
+
+    width:100%;
+}
+
+.video-card iframe{
+    width:100%;
+    height:160px;
+    border:none;
+}
+
+.video-card h3{
+    padding:16px;
+    text-align:center;
+
+    font-size:15px;
+    font-weight:700;
+
+    color:#f8fafc;
+}
+
+/*승률바*/
+.win-bar{
+    height:10px;
+
+    background:rgba(255,255,255,.08);
+    border-radius:999px;
+
+    overflow:hidden;
+}
+
+.win-bar span{
+    display:block;
+    height:100%;
+
+    border-radius:999px;
+
+    transition:width .8s ease;
+}
+
+/*hover기능*/
+@media(hover:hover){
+
+    .team-card:hover,
+    .video-card:hover,
+    .rank-card:hover{
+        transform:translateY(-7px);
+    }
+
+    .video-card:hover{
+        box-shadow:0 18px 40px rgba(0,0,0,.45);
+        border-color:rgba(250,204,21,.25);
+    }
+}
+
+/*모바일*/
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 12px;
+    }
+
+    
+    header h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        list-style: none;
+        flex: 0 0 auto;
+    }
+
+    nav ul li a {
+        display: inline-block;
+        padding: 6px 10px;
+        font-size: 13px;
+
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 999px;
+        white-space: nowrap;
+    }
+    
+    nav ul li a.active {
+    background: #ffffff;
+    color: #1b6f3e;
+    font-weight: 600;
+    }
+
+    .hero {
+        min-height: 260px;
+        padding: 40px 14px;
+        text-align: center;
+    }
+
+    .team-grid,
+    .rank-list,
+    .video-container {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    section {
+        margin: 30px auto;
+        padding: 0 12px;
+    }
+
+    .chart-box {
+        height: 280px;
+        padding: 12px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+}
